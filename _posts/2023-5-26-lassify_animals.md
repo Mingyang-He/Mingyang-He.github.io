@@ -85,8 +85,6 @@ By using **_metrics=error_rate_**, it tells what percentage of images in the val
 **_learn.fine_tune(3)_** tells fastAI how many times to look at each image.
 
 
-![Image of training results](images/9.png)
-
 
 
 
