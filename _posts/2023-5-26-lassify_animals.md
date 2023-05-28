@@ -1,9 +1,21 @@
 # Classify 10 animals
 
 This example aims to use Duck Duck Go to scrape sample images off the Web based on the fast.ai course
-example on birds and design an appropriate multiclass loss function. :alien:
+example on birds and design an appropriate multiclass loss function. 👽
 
 **Step One: searching and downlowding images**
+```
+!pip install --upgrade duckduckgo_search
+
+from duckduckgo_search import ddg_images
+from fastcore.all import *
+
+def search_images(term, max_images=200): return L(ddg_images(term, max_results=max_images)).itemgot('image')
+```
+📝
+
+Install the duckduckgo search engine at the first.
+
 ```
 from fastbook import *
 from fastai.vision.widgets import *
@@ -12,7 +24,7 @@ def search_images(term, max_images=30):
     print(f"Searching for '{term}'")
     return L(search_images_ddg(term, max_images=max_images))
 ```
-:memo:
+📝
 
 Imports all of the fastai.vision and fastbook library.
 
@@ -31,7 +43,7 @@ for o in searches:
     sleep(10)  # Pause between searches to avoid over-loading server
     resize_images(path/o, max_size=400, dest=path/o)
 ```
-:memo:
+📝
 
 Grab some examples of animal photos, and save each group of photos to a different folder.
 
@@ -41,7 +53,7 @@ failed = verify_images(get_image_files(path))
 failed.map(Path.unlink)
 len(failed)
 ```
-:memo:
+📝
 
 Sometimes photos may not download correctly which could cause fail model training, so they have to be removed.
 
@@ -56,7 +68,7 @@ dls = DataBlock(
 
 dls.show_batch(max_n=6)
 ```
-:memo:
+📝
 
 This part tells fastAI what kind of dataset we have and how it is structured. 
 In fastAI we can create that easily using a DataBlock, and view sample images from it.
@@ -75,7 +87,7 @@ Finally, **_resize_** the image to 192x192 pixels.
 learn = vision_learner(dls, resnet18, metrics=error_rate)
 learn.fine_tune(3)
 ```
-:memo:
+📝
 
 This part creates a convolutional neural network (CNN) and specifies what architecture to use, what data we want to train it on, and what metric to use.
 
