@@ -8,7 +8,7 @@
   -	The layers are trained by algorithms that minimize their errors and improve their accuracy.
   -	In this way, the network learns to perform a specified task.
 
-![Image of neural network logo](images/1.png)
+![Image of neural network logo](Mingyang-He.github.io/images/1.png)
 
 Nearly all of deep learning is based on a single type of model, the neural network. The name and 
 structure of neural network are inspired by the human brain, mimicking the way that biological neurons signal to one another.
