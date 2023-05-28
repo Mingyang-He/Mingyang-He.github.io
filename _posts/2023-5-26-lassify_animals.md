@@ -20,7 +20,8 @@ define a function, **_search_images_**, which labels images based on a filename 
 
 ```
 searches = 'dog','bird','cat','goat','lizard','bull','snake','bear','fish','kangaroo'
-path = Path('bird_or_not')
+path = Path('dog_or_not','bird_or_not','cat_or_not','goat_or_not','lizard_or_not',
+           'bull_or_not','snake_or_not','bear_or_not','fish_or_not','kangaroo_or_not')
 from time import sleep
 
 for o in searches:
