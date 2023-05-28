@@ -1,7 +1,10 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
-
+**Hello and welcome to this blog ❤**
+This is my blog to record the learning progress on fastAI courses ❤
 ![Image of fast.ai logo](images/logo.png)
 
-## This is a title
+**About me and this course**
+My name is MINGYANG HE, a student majoring in Electrical Engneering in University of Queensland.
+This blog was created when I took the image processing course (ELEC4630) in semester 1, 2023.
+This blog and self-learning activity are parts of the content for ELEC4630 course.
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+The fastAI and deep learning journey continues ...
