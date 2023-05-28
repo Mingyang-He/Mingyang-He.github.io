@@ -1,6 +1,6 @@
 # FastAI and Deep learning
 
- What is Deep Learning :alien:
+ What is Deep Learning 👽
   -	Deep learning is a computer technique to extract and transform data –
     with use cases ranging from human speech recognition to animal imagery 
     classification – by using multiple layers of neural networks.
@@ -27,20 +27,28 @@ The full code and working process are displayed below:
 
 ![Image of fisrt model](/images/2.png)
 
-:memo:The first line imports all of the **_fastai.vision_** library. This gives all of the functions and classes needed to create a wide variety of computer vision models.
+📝
+
+The first line imports all of the **_fastai.vision_** library. This gives all of the functions and classes needed to create a wide variety of computer vision models.
 
 ![Image of fisrt model code](/images/3.png)
 
-:memo:The second line downloads a standard dataset from the fast.ai database collection to local server, extracts it, and returns a path object with the extracted location.
+📝
+
+The second line downloads a standard dataset from the fast.ai database collection to local server, extracts it, and returns a path object with the extracted location.
 
 ![Image of fisrt model code](/images/4.png)
 
-:memo:
+📝
+
+
 In the third line we define a function, **_is_cat_**, which labels cats based on a filename rule provided by the dataset creators.
 
 ![Image of fisrt model code](/images/5.png)
 
-:memo:
+📝
+
+
 The function in the fourth line tells fastai what kind of dataset we have and how it is structured. The class for deep learning datasets we are using is **_ImageDataLoaders_**. 
 The last line tells fastai to use the **_is_cat_** function just defined to get the labels from the dataset. Finally, we define the Transforms that we need.
 A Transform contains code that is applied automatically during training. In this case, each item is resized to a 224-pixel square.
@@ -54,7 +62,9 @@ By doing so, if we change our model and retrain it, we know that any differences
 
 ![Image of fisrt model code](/images/6.png)
 
-:memo:
+📝
+
+
 The fifth line of the code training our image recognizer tells fastai to create a **_convolutional neural network (CNN)_** and specifies what architecture to use, what data we want to train it on, and what **_metric_** to use.
 
 The 34 in resnet34 refers to the number of layers in this variant of the architecture (other options are 18, 50, 101, and 152). Models using architectures with more layers take longer to train, and are more prone to overfitting.
@@ -66,7 +76,8 @@ Another common metric for classification is accuracy.3
 
 ![Image of fisrt model code](/images/7.png)
 
-:memo:
+📝
+
 The sixth line of our code tells fastai how to fit the model. In order to fit a model, we have to provide at least one piece of information: how many times to look at each image (known as number of epochs). 
 The number of epochs you select will largely depend on how much time you have available, and how long you find it takes in practice to fit your model.
 
