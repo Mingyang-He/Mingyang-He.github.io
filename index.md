@@ -1,5 +1,6 @@
 **Hello and welcome to this blog ❤**
 This is my blog to record the learning progress on fastAI courses ❤
+
 ![Image of fast.ai logo](images/logo.png)
 
 **About me and this course**
