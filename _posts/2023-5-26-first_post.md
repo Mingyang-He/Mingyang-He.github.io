@@ -8,7 +8,7 @@
   -	The layers are trained by algorithms that minimize their errors and improve their accuracy.
   -	In this way, the network learns to perform a specified task.
 
-![Image of neural network logo](Mingyang-He.github.io/images/1.png)
+![Image of neural network logo](/images/1.png)
 
 Nearly all of deep learning is based on a single type of model, the neural network. The name and 
 structure of neural network are inspired by the human brain, mimicking the way that biological neurons signal to one another.
@@ -25,20 +25,20 @@ This model implements fastAI to train to model and make it be able to identify a
 
 The full code and working process are displayed below:
 
-![Image of fisrt model](images/2.png)
+![Image of fisrt model](/images/2.png)
 
 :memo:The first line imports all of the **_fastai.vision_** library. This gives all of the functions and classes needed to create a wide variety of computer vision models.
 
-![Image of fisrt model code](images/3.png)
+![Image of fisrt model code](/images/3.png)
 
 :memo:The second line downloads a standard dataset from the fast.ai database collection to local server, extracts it, and returns a path object with the extracted location.
 
-![Image of fisrt model code](images/4.png)
+![Image of fisrt model code](/images/4.png)
 
 :memo:
 In the third line we define a function, **_is_cat_**, which labels cats based on a filename rule provided by the dataset creators.
 
-![Image of fisrt model code](images/5.png)
+![Image of fisrt model code](/images/5.png)
 
 :memo:
 The function in the fourth line tells fastai what kind of dataset we have and how it is structured. The class for deep learning datasets we are using is **_ImageDataLoaders_**. 
@@ -52,7 +52,7 @@ The validation set is used to measurer the accuracy of the model. By default, th
 The parameter **_seed=42_** sets the random seed to the same value every time we run this code, which means we get the same validation set every time we run it. 
 By doing so, if we change our model and retrain it, we know that any differences are due to the changed to the model, not due tot having a different random validation set.
 
-![Image of fisrt model code](images/6.png)
+![Image of fisrt model code](/images/6.png)
 
 :memo:
 The fifth line of the code training our image recognizer tells fastai to create a **_convolutional neural network (CNN)_** and specifies what architecture to use, what data we want to train it on, and what **_metric_** to use.
@@ -64,7 +64,7 @@ A **_metric_** is a function that measures the quality of the model's prediction
 In this case, we're using **_error_rate_**, which is a function provided by fastai that does just what it says: tells you what percentage of images in the validation set are being classified incorrectly.
 Another common metric for classification is accuracy.3
 
-![Image of fisrt model code](images/7.png)
+![Image of fisrt model code](/images/7.png)
 
 :memo:
 The sixth line of our code tells fastai how to fit the model. In order to fit a model, we have to provide at least one piece of information: how many times to look at each image (known as number of epochs). 
@@ -73,7 +73,7 @@ The number of epochs you select will largely depend on how much time you have av
 The head of a model is the part that is newly added to be specific to the new dataset. An epoch is one complete pass through the dataset. After calling fit, the results after each epoch are printed, showing the epoch number,
 the training and validation set losses (the "measure of performance" used for training the model), and any metrics you've requested (error rate, in this case).
 
-![Image of fisrt model code](images/8.png)
+![Image of fisrt model code](/images/8.png)
 
 From this experiment we can see some fundamental things about a deep learning model: :alien:
   +	A model cannot be created without data.
